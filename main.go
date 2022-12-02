@@ -1,10 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"github.com/KING-SAMM/go-fiber-crm-basic/lead"
 	"github.com/KING-SAMM/go-fiber-crm-basic/database"
 	"github.com/gofiber/fiber"
-	"fmt"
+	"github.com/jinzhu/gorm"
+	_"github.com/jinzhu/gorm/dialects/sqlite"
 )
 
 func setupRoutes(app *fiber.App) {
